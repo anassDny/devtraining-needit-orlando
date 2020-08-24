@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>needit_checkRequestedFor [ Default GET ]</qualified_name>
+        <rest_endpoint>admin</rest_endpoint>
+        <rest_message display_value="needit_checkRequestedFor">9c68dd77dba21010e1d058b3ca961983</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 11:51:01</sys_created_on>
+        <sys_id>1ca8dd77dba21010e1d058b3ca961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_rest_message_fn_1ca8dd77dba21010e1d058b3ca961920</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 11:51:01</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>3158e579dba1d304b2e05d00cf961923</instance_id>
+        <instance_name>dev56672</instance_name>
+        <name>sys_rest_message_fn_1ca8dd77dba21010e1d058b3ca961920</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>needit_checkRequestedFor [ Default GET ]</qualified_name><rest_endpoint>admin</rest_endpoint><rest_message display_value="needit_checkRequestedFor">9c68dd77dba21010e1d058b3ca961983</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-17 11:51:01</sys_created_on><sys_id>1ca8dd77dba21010e1d058b3ca961920</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_rest_message_fn_1ca8dd77dba21010e1d058b3ca961920</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-17 11:51:01</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>1641158716</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>a233d5dcdbae1010e1d058b3ca96195f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 11:51:02</sys_created_on>
+        <sys_id>d8a8dd77dba21010e1d058b3ca961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173fc422caf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 11:51:02</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>90a8dd770fa210109c6911d1dd3f6b23</update_guid>
+        <update_guid_history>90a8dd770fa210109c6911d1dd3f6b23:1641158716</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-17 11:54:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>0ce2ef44c31644608286dcae9fc50440</sys_id>
+        <sys_metadata>1ca8dd77dba21010e1d058b3ca961920</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_1ca8dd77dba21010e1d058b3ca961920</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_1ca8dd77dba21010e1d058b3ca961920">d8a8dd77dba21010e1d058b3ca961923</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-17 11:54:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

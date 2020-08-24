@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="admin">59f0b43f53132300ee0dddeeff7b12a1</basic_auth_profile>
+        <basic_auth_user/>
+        <description>add needit record via WS import set</description>
+        <name>addNeedit</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://dev56672.service-now.com/api/now/import/x_58872_needit_needit_import_rest</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 15:38:59</sys_created_on>
+        <sys_id>b972e198dbee1010e1d058b3ca961983</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>addNeedit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_rest_message_b972e198dbee1010e1d058b3ca961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 17:25:06</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>
