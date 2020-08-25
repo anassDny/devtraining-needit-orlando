@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Assert a response payload element '/result' contains 'inserted'</description>
+        <display_name>Assert JSON Response Payload Element</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>6</order>
+        <snapshot/>
+        <step_config display_value="Assert JSON Response Payload Element">afc114199f132200ef4afa7dc67fcf64</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>7ac3e69edbfe1010e1d058b3ca96193d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Assert JSON Response Payload Element</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_step_7ac3e69edbfe1010e1d058b3ca96193d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 12:19:28</sys_updated_on>
+        <table/>
+        <test display_value="Test RWS">6acd9b46db3a1010e1d058b3ca961928</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=7ac3e69edbfe1010e1d058b3ca96193d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7ac3e69edbfe1010e1d058b3ca96193d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>5e44aededbfe1010e1d058b3ca9619df</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 12:19:17</sys_updated_on>
+        <value>/result</value>
+        <variable display_value="">5a9258199f132200ef4afa7dc67fcfb4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7ac3e69edbfe1010e1d058b3ca96193d</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>9a44aededbfe1010e1d058b3ca9619df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 12:19:17</sys_updated_on>
+        <value>contains</value>
+        <variable display_value="">2db298199f132200ef4afa7dc67fcfbc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7ac3e69edbfe1010e1d058b3ca96193d</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>d644aededbfe1010e1d058b3ca9619df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 11:51:27</sys_updated_on>
+        <value>inserted</value>
+        <variable display_value="">7b139c199f132200ef4afa7dc67fcfb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ac3e69edbfe1010e1d058b3ca96193d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>element_name</field>
+        <id>7ac3e69edbfe1010e1d058b3ca96193d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>5644aededbfe1010e1d058b3ca9619df</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 12:19:17</sys_updated_on>
+        <table>var__m_atf_input_variable_afc114199f132200ef4afa7dc67fcf64</table>
+        <value>/result</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>element_value</field>
+        <id>7ac3e69edbfe1010e1d058b3ca96193d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-25 11:46:23</sys_created_on>
+        <sys_id>9244aededbfe1010e1d058b3ca9619df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-25 11:51:27</sys_updated_on>
+        <table>var__m_atf_input_variable_afc114199f132200ef4afa7dc67fcf64</table>
+        <value>inserted</value>
+    </sys_element_mapping>
+</record_update>
