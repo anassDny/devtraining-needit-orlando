@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.AddNeedit</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>add needit record trough REST/SOAP WS</description>
+        <name>AddNeedit</name>
+        <script><![CDATA[var AddNeedit = Class.create();
+AddNeedit.prototype = {
+	initialize: function() {
+	},
+
+	AddNeeditRest: function(rec) {
+		try { 
+			var msg = "" ;
+
+			var rGet = new sn_ws.RESTMessageV2('x_58872_needit.Test import WS', 'isReqFor');
+			//var queryParams = rGet.queryParams; 
+			rGet.setStringParameterNoEscape('user_name', encodeURI(rec.getDisplayValue("u_requested_for")));
+			//rGet.setStringParameterNoEscape('user_name', 'anass%20dennaye');
+			var response = rGet.execute();
+			var responseBody = response.getBody();
+			var parsedResponse = JSON.parse(responseBody);
+
+			if(parsedResponse.result){
+				var rPost = new sn_ws.RESTMessageV2('x_58872_needit.Test import WS', 'Send needIt Rec');
+				rPost.setStringParameterNoEscape('requested_for', rec.getDisplayValue("u_requested_for"));
+				rPost.setStringParameterNoEscape('short_description', rec.getDisplayValue("short_description"));
+				response = rPost.execute();
+				responseBody = response.getBody();
+				var httpStatus ="" + response.getStatusCode();
+			}else{
+				responseError = new sn_ws_err.ServiceError();
+				responseError.setStatus(442);
+				responseError.setMessage("the 'requested for' does not exist in the destination DB");
+				responseError.setDetail("the 'requested for' does not exist in the destination DB , a profile should be created/activated for that user to perform this operation");
+				return responseError;
+			}				
+
+			if (httpStatus.startsWith('20')){
+				msg = 'REST : record created successfully' ;
+			}else {
+				msg = 'REST :ERROR' ;
+			}
+			return msg ;
+		}
+		catch(ex) {
+			msg = ex.message;
+			return msg ;
+		}
+
+	},
+
+	AddNeeditSoap: function(rec) {
+		try { 
+			var msg = "" ;
+			var s = new sn_ws.SOAPMessageV2('x_58872_needit.call_needit_soap', 'insert');
+
+			s.setStringParameterNoEscape('insert.u_short_description', rec.getDisplayValue("short_description"));
+			s.setStringParameterNoEscape('insert.u_requested_for', rec.getDisplayValue("u_requested_for"));
+
+			var response = s.execute();
+			var responseBody = response.getBody(); 
+			var status = "" + response.getStatusCode();
+
+			if (status.startsWith('20')){
+				msg = 'SOAP : record created successfully' ;
+			}
+			else {
+				msg = 'SOAP : ERROR' ;
+			}
+			return msg ;
+		}
+		catch(ex) { 
+			msg = ex.message;
+			return msg;
+		}
+	},
+
+	type: 'AddNeedit'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-13 10:30:31</sys_created_on>
+        <sys_id>598b5c662fe2d010e1ded3f62799b66e</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name>AddNeedit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_598b5c662fe2d010e1ded3f62799b66e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-18 12:10:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

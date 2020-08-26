@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Send a 'undefined' request to 'undefined'</description>
+        <display_name>Send REST Request - Inbound - REST API Explorer</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Send REST Request - Inbound - REST API Explorer">ab3746b23b132200fc26229c93efc419</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 18:06:44</sys_created_on>
+        <sys_id>0cc17a862f761010e1ded3f62799b62b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send REST Request - Inbound - REST API Explorer</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_step_0cc17a862f761010e1ded3f62799b62b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:06:44</sys_updated_on>
+        <table/>
+        <test display_value="Rest Test - needit">8beb6a822f761010e1ded3f62799b688</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=0cc17a862f761010e1ded3f62799b62b"/>
+</record_update>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Log: </description>
+        <display_name>Log</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Log">58ab71985f30220012b44adb7f46661e</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 17:43:01</sys_created_on>
+        <sys_id>f45c6e822f761010e1ded3f62799b68e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Log</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_step_f45c6e822f761010e1ded3f62799b68e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:02:15</sys_updated_on>
+        <table/>
+        <test display_value="Rest Test - needit">8beb6a822f761010e1ded3f62799b688</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=f45c6e822f761010e1ded3f62799b68e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>f45c6e822f761010e1ded3f62799b68e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 17:43:01</sys_created_on>
+        <sys_id>bc5c6e822f761010e1ded3f62799b68f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 17:43:01</sys_updated_on>
+        <value/>
+        <variable display_value="">523c79985f30220012b44adb7f46663a</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>1c969e04db2d57403353f22ebf9619e5</instance_id>
+        <instance_name>dev56240</instance_name>
+        <name>sys_atf_step_f45c6e822f761010e1ded3f62799b68e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Log: </description><display_name>Log</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><snapshot/><step_config display_value="Log">58ab71985f30220012b44adb7f46661e</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-24 17:43:01</sys_created_on><sys_id>f45c6e822f761010e1ded3f62799b68e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Log</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_atf_step_f45c6e822f761010e1ded3f62799b68e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-24 18:02:15</sys_updated_on><table/><test display_value="Rest Test - needit">8beb6a822f761010e1ded3f62799b688</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=f45c6e822f761010e1ded3f62799b68e"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>f45c6e822f761010e1ded3f62799b68e</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-24 17:43:01</sys_created_on><sys_id>bc5c6e822f761010e1ded3f62799b68f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-24 17:43:01</sys_updated_on><value/><variable display_value="">523c79985f30220012b44adb7f46663a</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-102844088</payload_hash>
+        <record_name>Log</record_name>
+        <reverted_from/>
+        <source>7880a74e2fe69010e1ded3f62799b689</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 18:02:15</sys_created_on>
+        <sys_id>1eb0fe462f761010e1ded3f62799b6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17421a28df90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:02:15</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>56b0fe46f776101017b1e9790a80ddbc</update_guid>
+        <update_guid_history>56b0fe46f776101017b1e9790a80ddbc:-102844088,f05c6e82c0761010701096112d221c91:-2078604697</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 18:04:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>119b45f234264c98880d1d341c881a81</sys_id>
+        <sys_metadata>f45c6e822f761010e1ded3f62799b68e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Log</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_atf_step_f45c6e822f761010e1ded3f62799b68e</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_f45c6e822f761010e1ded3f62799b68e">1eb0fe462f761010e1ded3f62799b6bc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:04:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

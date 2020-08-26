@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_template">
+    <sys_atf_test_template action="DELETE">
+        <description>Create a needit record and send it via REST Table API.</description>
+        <name>WS Tests from PDI2</name>
+        <sys_class_name>sys_atf_test_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 17:39:13</sys_created_on>
+        <sys_id>deeaee422f761010e1ded3f62799b615</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>WS Tests from PDI2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_test_template_deeaee422f761010e1ded3f62799b615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:05:17</sys_updated_on>
+        <template>14872288df60220062fe6c7a4df26319,ab3746b23b132200fc26229c93efc419,58ab71985f30220012b44adb7f46661e</template>
+    </sys_atf_test_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>1c969e04db2d57403353f22ebf9619e5</instance_id>
+        <instance_name>dev56240</instance_name>
+        <name>sys_atf_test_template_deeaee422f761010e1ded3f62799b615</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_template"><sys_atf_test_template action="INSERT_OR_UPDATE"><description>Create a needit record and send it via REST Table API.</description><name>WS Tests from PDI2</name><sys_class_name>sys_atf_test_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-24 17:39:13</sys_created_on><sys_id>deeaee422f761010e1ded3f62799b615</sys_id><sys_mod_count>2</sys_mod_count><sys_name>WS Tests from PDI2</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_atf_test_template_deeaee422f761010e1ded3f62799b615</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-24 18:05:17</sys_updated_on><template>14872288df60220062fe6c7a4df26319,ab3746b23b132200fc26229c93efc419,58ab71985f30220012b44adb7f46661e</template></sys_atf_test_template></record_update>]]></payload>
+        <payload_hash>9100157</payload_hash>
+        <record_name>WS Tests from PDI2</record_name>
+        <reverted_from/>
+        <source>7880a74e2fe69010e1ded3f62799b689</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 18:05:18</sys_created_on>
+        <sys_id>0b6132862f761010e1ded3f62799b6f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17421a557330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:05:18</sys_updated_on>
+        <type>Test Template</type>
+        <update_guid>43613286827610106666872a2ea42df4</update_guid>
+        <update_guid_history>43613286827610106666872a2ea42df4:9100157,038bee420c761010e94965fc92e59aa5:-34446785,017b2682627610103e27c01c6cea5f25:789658193</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-24 18:09:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_test_template">sys_atf_test_template</sys_db_object>
+        <sys_id>765082da7a764661b96c1b1497777629</sys_id>
+        <sys_metadata>deeaee422f761010e1ded3f62799b615</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WS Tests from PDI2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_atf_test_template_deeaee422f761010e1ded3f62799b615</sys_update_name>
+        <sys_update_version display_value="sys_atf_test_template_deeaee422f761010e1ded3f62799b615">0b6132862f761010e1ded3f62799b6f4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-24 18:09:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
