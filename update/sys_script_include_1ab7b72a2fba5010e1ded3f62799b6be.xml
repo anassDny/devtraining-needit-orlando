@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_58872_needit.createNeeditRequestBody</api_name>
         <caller_access/>
@@ -11,16 +11,45 @@
 createNeeditRequestBody.prototype = {
 	initialize: function() {
 	},
-	getBody: function() {
+	getRestBody: function() {
 		var needitGR = new GlideRecord('x_58872_needit_needit'); 
 		var body =[];
 		needitGR.query(); 
 		while(needitGR.next()){ 
 			body.push({"u_requested_for" : needitGR.getDisplayValue('u_requested_for') ,
-"u_short_description" : needitGR.getDisplayValue('short_description')}) ;
+					   "u_short_description" : needitGR.getDisplayValue('short_description')}) ;
 		}
 		body = JSON.stringify(body) ;
 		return  body;
+	},
+	getSoapBody: function() {
+		var xmlHeader = "<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:x='http://www.service-now.com/x_58872_needit_add_soap_needit'><soapenv:Header/><soapenv:Body><x:insertMultiple><!--1 or more repetitions:-->" ;
+		var xmlFooter = "</x:insertMultiple></soapenv:Body></soapenv:Envelope>" ;
+
+		var needitGR = new GlideRecord('x_58872_needit_needit'); 
+		//needitGR.setLimit(2) ;
+		needitGR.addEncodedQuery('short_descriptionLIKEtiti');
+		needitGR.query(); 
+		var body =[];
+		var bigbody =[];
+		while(needitGR.next()){ 
+			var short_desc = needitGR.getDisplayValue('short_description') ;
+			short_desc =  GlideStringUtil.escapeHTML(short_desc);
+			body.push({"record" :{"u_requested_for" : needitGR.getDisplayValue('u_requested_for') ,
+"u_short_description" : short_desc}}) ;
+		}
+		bigbody.push({"R" : body}) ;
+
+		var helper =new global.XMLHelper();
+		var xmlstring = helper.toXMLStr(bigbody);
+		xmlstring = xmlstring.substring(3) ;
+		xmlstring = xmlstring.substring(0 ,xmlstring.length-4) ;
+		var r = new RegExp('</R>', 'jg');
+		xmlstring = xmlstring.replace(r, '');
+		xmlstring = xmlstring.replace(/<R>/g, '');
+		var soapBody = xmlHeader + xmlstring + xmlFooter ;
+
+		return soapBody;
 	},
 	type: 'createNeeditRequestBody'
 };]]></script>
@@ -28,13 +57,13 @@ createNeeditRequestBody.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 13:18:52</sys_created_on>
         <sys_id>1ab7b72a2fba5010e1ded3f62799b6be</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>createNeeditRequestBody</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_include_1ab7b72a2fba5010e1ded3f62799b6be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 20:08:06</sys_updated_on>
+        <sys_updated_on>2020-08-31 10:01:42</sys_updated_on>
     </sys_script_include>
 </record_update>

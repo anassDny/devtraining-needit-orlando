@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
     <sysauto_script action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
@@ -24,7 +24,7 @@ request.setBasicAuth(user,password);
 request.setRequestHeader("Accept","application/json");
 
 var utility_ = new createNeeditRequestBody();
-var body = utility_.getBody() ;
+var body = utility_.getRestBody() ;
 gs.info('@@SJ the generated body :' + body) ;
 request.setRequestBody(body) ;
 
@@ -35,14 +35,14 @@ gs.info('@@SJ response body' + response.getBody());]]></script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-26 19:26:35</sys_created_on>
         <sys_id>bb9519fe2f7e5010e1ded3f62799b633</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Test 1</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysauto_script_bb9519fe2f7e5010e1ded3f62799b633</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-26 21:09:05</sys_updated_on>
+        <sys_updated_on>2020-08-28 22:06:52</sys_updated_on>
         <time_zone>GMT</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

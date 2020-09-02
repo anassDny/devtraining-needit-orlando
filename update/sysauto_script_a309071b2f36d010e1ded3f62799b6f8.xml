@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Test 2</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2020-08-28 17:00:57</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[try { 
+	var s = new sn_ws.SOAPMessageV2('x_58872_needit.call_needit_soap', 'insertMultiple');
+	var utility_ = new createNeeditRequestBody();
+	var body = utility_.getSoapBody() ;
+	//gs.info('@@soapbody' + body);
+	s.setRequestBody(body) ;
+
+	var response = s.execute();
+	var responseBody = response.getBody();
+
+	var xmlDoc = new XMLDocument2();
+	var doc = xmlDoc.parseXML(responseBody);
+
+	gs.info('@@DOC' + doc);
+
+	var status = response.getStatusCode();
+	gs.info('@@responseBody' + responseBody);
+	gs.info('@@status' + status);
+}
+catch(ex) { 
+	var message = ex.message;
+	gs.info('@@error' + message);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-28 22:02:43</sys_created_on>
+        <sys_id>a309071b2f36d010e1ded3f62799b6f8</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Test 2</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysauto_script_a309071b2f36d010e1ded3f62799b6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-31 10:05:26</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -7,42 +7,58 @@
         <certificate/>
         <enable_mutual_auth>false</enable_mutual_auth>
         <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_58872_needit_add_soap_needit">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <x:insert>
-        
-         <u_requested_for>${insert.u_requested_for}</u_requested_for>
-        
-         <!--Optional:-->
-         <u_short_description>${insert.u_short_description}</u_short_description>
-         <!--Optional:-->
-        
-      </x:insert>
-   </soapenv:Body>
+	<soapenv:Header/>
+	<soapenv:Body>
+		<x:insertMultiple>
+			<!--1 or more repetitions:-->
+			<record>
+				<u_requested_for>${insert.u_requested_for}</u_requested_for>
+				<!--Optional:-->
+				<u_short_description>short description 1 </u_short_description>
+				<!--Optional:-->
+
+			</record>
+			<record>
+				<u_requested_for>${insert.u_requested_for}</u_requested_for>
+				<!--Optional:-->
+				<u_short_description>short description 2 </u_short_description>
+				<!--Optional:-->
+
+			</record>
+			<record>
+				<u_requested_for>${insert.u_requested_for}</u_requested_for>
+				<!--Optional:-->
+				<u_short_description>short description 3 </u_short_description>
+				<!--Optional:-->
+
+			</record>
+			
+		</x:insertMultiple>
+	</soapenv:Body>
 </soapenv:Envelope>]]></envelope>
-        <function_name>insert</function_name>
+        <function_name>insertMultiple</function_name>
         <key_store/>
         <key_store_alias/>
         <key_store_password>BiEMFVqbCuh7MaSa+EyjGA==</key_store_password>
         <lock>false</lock>
         <protocol_profile/>
-        <qualified_name>call_needit_soap [ insert ]</qualified_name>
-        <soap_action>http://www.service-now.com/x_58872_needit_add_soap_needit/insert</soap_action>
+        <qualified_name>call_needit_soap [ insertMultiple ]</qualified_name>
+        <soap_action>http://www.service-now.com/x_58872_needit_add_soap_needit/insertMultiple</soap_action>
         <soap_endpoint>https://dev56672.service-now.com/x_58872_needit_add_soap_needit.do?SOAP</soap_endpoint>
         <soap_message display_value="call_needit_soap">415c39ae2fa6d010e1ded3f62799b6c2</soap_message>
         <strip_whitespace>false</strip_whitespace>
         <sys_class_name>sys_soap_message_function</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-13 17:32:58</sys_created_on>
-        <sys_id>c28042622fe6d010e1ded3f62799b63c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>insert</sys_name>
+        <sys_created_on>2020-08-28 16:09:40</sys_created_on>
+        <sys_id>d05db2572f36d010e1ded3f62799b63b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>insertMultiple</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_soap_message_function_c28042622fe6d010e1ded3f62799b63c</sys_update_name>
+        <sys_update_name>sys_soap_message_function_d05db2572f36d010e1ded3f62799b63b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-28 16:13:11</sys_updated_on>
+        <sys_updated_on>2020-08-31 07:40:58</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_ws_security>false</use_ws_security>
